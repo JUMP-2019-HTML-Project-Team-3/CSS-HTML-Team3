@@ -11,10 +11,11 @@ footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
-	background-color: grey;
 }
 
 aside {
+	border: 2px solid black;
+	border-right: none;
 	-webkit-flex: 0;
 	-ms-flex: 0;
 	flex: 0;
@@ -23,14 +24,20 @@ aside {
 	padding-left: 5%;
 	padding-right: 5%;
 	width: 30%;
-	background-color: grey;
+}
+
+img{
+	width: auto;
+	height: 15px;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+	transition: width 1s, height 1s, transform 1s;
 }
 
 article {
+	border: 2px solid black;
 	-webkit-flex: 3;
 	-ms-flex: 3;
 	flex: 3;
-	background: grey;
 	float: right;
 	width: 70%;
 }
@@ -42,24 +49,51 @@ article {
 	overflow: hidden;
 }
 
-#li1,
-#li2,
-#li3 {
+#li1{
+	height: 20px;
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
+	-webkit-transition: width 1s;
+	transition: 1s;
+}
+.foodPic{
+	visibility: hidden;
 }
 
-#li1:hover {
-	background-color: red;
+#li1:hover .foodPic {
+	height: 180px;
+	visibility: visible;
 }
 
-#li2:hover {
-	background-color: white;
+#li1:hover .foodPic img{
+	height: 150px;
+	width: auto;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
-#li3:hover {
-	background-color: blue;
+#li1:hover{
+	height: 180px;
+}
+
+.circleHov:hover{
+	-webkit-animation-name: changeColor;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: changeColor;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes changeColor{
+	from {stroke: aqua;}
+	to {stroke: rgb(7, 109, 4); }
+}
+
+@keyframes changeColor{
+	from {stroke: aqua;}
+	to {stroke: rgb(7, 109, 4); }
 }
 
 @media (max-width: 600px) {
