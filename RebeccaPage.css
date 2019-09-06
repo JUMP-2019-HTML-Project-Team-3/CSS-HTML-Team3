@@ -8,12 +8,19 @@
     margin-right: auto;
 }
 
+.resize-image{
+	 width: 120px;
+	 height: 120px;
+}
+
 table, th, td {
     border: 1px solid black;
 }  
 
 th {
     background-color:rebeccapurple;
+	font-family: Impact, Charcoal, sans-serif;
+	text-shadow: 0 0 10px yellow, 0 0 20px seashell;
 }
 
 td {
