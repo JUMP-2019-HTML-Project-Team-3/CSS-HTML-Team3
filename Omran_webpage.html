@@ -18,18 +18,24 @@
 <!-- The visible part of the HTML document is between <body> and </body>. -->
 
 <body>
-        <div style="background-color:rgb(165, 23, 23);color:white;padding:20px;">
-                <nav>
-                    <ul>
-                        <h2><strong>Look at Our Restaurants!.com</strong><b>&emsp;</h2>
-                        <li><a href="Index.html"><strong>Home</strong></a><b>&emsp;</b>
-                            <a href="greg.html"><strong>Greg's Page</strong></a><b>&emsp;</b>
-                            <strong>Chef Recipe</strong><b>&emsp;</b>
-                            <a href="RebeccaPage.html"><strong>Salki's Noms Cafe</strong></a><b>&emsp;</b></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- Nav bar end -->
+    <!-- NAV BAR HTML -->
+    <div id="navblock">
+            <nav>
+              <ul>
+                <h1 class="left">Look at Our Restaurants!.com</h1>
+                <li><a href="Index.html">Home</a>
+                  <div class="dropdown">
+                      <button class="dropbtn" id="navblock">Our Foodie's Pages</button>
+                      <div class="dropdown-content">
+                        <a href="greg.html">Greg's Page</a>
+                        <a href="#">Chef Recipe</a>
+                        <a href="RebeccaPage.html">Salki's Noms Cafe</a>
+                      </div>
+                  </div>
+              </ul>
+            </nav>
+          </div>
+    <!-- NAV BAR END -->
             
     <!-- HTML headings are defined with the <h1> to <h6> tags, <h1> being most important and <h6 being least important. -->
     <h1>Pork Roast (Just Kidding!)</h1>
