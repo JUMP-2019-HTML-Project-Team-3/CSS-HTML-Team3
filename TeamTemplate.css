@@ -1,3 +1,4 @@
+
 /*NAVBAR MAIN CSS */
   #navblock{
     background-color:rgb(165, 23, 23);
@@ -81,6 +82,11 @@
 	
 	/*End of NAVBAR */
 	
+	.outer-box-frame {
+		border: 1rem solid #2b506e;
+	}
+
+
 	body {
 		background-color: wheat;
 	}
