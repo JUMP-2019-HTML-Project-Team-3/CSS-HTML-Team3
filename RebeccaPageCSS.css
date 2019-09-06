@@ -1,0 +1,21 @@
+.inline-center {
+    text-align: center; 
+}
+
+.inline-image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}  
+
+th {
+    background-color:rebeccapurple;
+}
+
+td {
+    background-color:skyblue;
+}

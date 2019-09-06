@@ -1,31 +1,12 @@
 <!DOCTYPE html>
 <html>
-<!-- NavBar Start -->
-<head>
-    <style>
-    a:link {
-      color: white;
-      background-color: rgb(165, 23, 23);
-      text-decoration: none;
-    }
-    a:visited {
-      color: pink;
-      background-color: rgb(165, 23, 23);
-      text-decoration: none;
-    }
-    a:hover {
-      color: red;
-      background-color: rgb(165, 23, 23);
-      text-decoration: underline;
-    }
-    a:active {
-      color: yellow;
-      background-color: rgb(165, 23, 23);
-      text-decoration: underline;
-    }
-    </style>
-    </head>
-<div style="background-color:rgb(165, 23, 23);color:white;padding:20px;">
+   <head>
+	<link rel="stylesheet" type="text/css" href="TeamTemplate.css">
+    <link rel="stylesheet" type="text/css" href="RebeccaPageCSS.css">
+      <title>Salki's Noms</title>
+  </head>
+  <body>
+	<div style="background-color:rgb(165, 23, 23);color:white;padding:20px;">
 <nav>
     <ul>
     <h2><strong>Look at Our Restaurants!.com</strong><b>&emsp;</h2>    
@@ -36,13 +17,8 @@
     </ul>
 </nav>
 </div>
-<!-- Nav bar end -->
-   <head>
-    <link rel="stylesheet" type="text/css" href="RebeccaPageCSS.css">
-	<link rel="shortcut icon" href="faviconsalki.ico">
-      <title>Salki's Noms</title>
-  </head>
-  <body>
+  
+  
     <canvas id="myCanvas" width="200" height="100"></canvas>
                 
       <script>
@@ -57,9 +33,10 @@
       ctx.strokeStyle = gradient;
       ctx.strokeText("Salki's Noms",10,50);
       </script>
-    <a href="#menu">View Menu</a>
-    <a href ="#review">Leave a Review</a>
-    <img class = "inline-image-center" src = 'Salki-Logo.png' alt = "Salki Logo">
+    <div class = "inline-center">
+	<a href="#menu">View Menu</a>
+    <a href ="#review">Leave a Review</a> </div>
+    <img class = "inline-image-center" src = "cafeimages/Salki-Logo.png" alt = "Salki Logo">
     <hr>
 
     <p class = "inline-center">Come on down to Salki's Noms to get some food!</p>
@@ -83,31 +60,31 @@
             <tr>
               <td>Cat Cookies</td>
               <td>Cat-shaped cookies with icing topping</td>
-              <td><img class = "inline-image-center"  src = "cookies.jpg" alt="Cat Cookies" width="120" height="120"></td>
+              <td><img class = "inline-image-center"  src = "cafeimages/cookies.jpg" alt="Cat Cookies" width="120" height="120"></td>
               <td>$3.00 for 5</td>
             </tr>
             <tr>
               <td>Rainbow Waffles</td>
               <td>Stack of seven waffles in good ol' ROYGBIV</td>
-              <td><img class = "inline-image-center"  src = "rainbowwaffle2.jpg" alt="Bear Waffles" width="120" height="120"></td>
+              <td><img class = "inline-image-center"  src = "cafeimages/rainbowwaffle2.jpg" alt="Bear Waffles" width="120" height="120"></td>
               <td>$5.00</td>
             </tr>
             <tr>
               <td>Mini Breakfast</td>
               <td>For when someone just wants a 'little' breakfast; bacon and eggs</td>
-              <td><img class = "inline-image-center"  src = "baconeggs.jpg" alt="Mini Breakfast" width="120" height="120"></td>
+              <td><img class = "inline-image-center"  src = "cafeimages/baconeggs.jpg" alt="Mini Breakfast" width="120" height="120"></td>
               <td>$3.00</td>
             </tr>
             <tr>
                 <td>Bear Sundae</td>
                 <td>Hot fudge sundae with oreo-cookie ears and a chocolate drizzle face</td>
-                <td><img class = "inline-image-center"  src = "bearsundae.jpg" alt="Bear Sundae" width="120" height="120"></td>
+                <td><img class = "inline-image-center"  src = "cafeimages/bearsundae.jpg" alt="Bear Sundae" width="120" height="120"></td>
                 <td>$7.50</td>
             </tr>
             <tr>
               <td>Pusheen Macarons</td>
               <td>Limited Time Only: delicious macarons inspired by Pusheen!</td>
-              <td><img class = "inline-image-center"  src = "pusheen.jpg" alt="Pusheen Macarons" width="120" height="120"></td>
+              <td><img class = "inline-image-center"  src = "cafeimages/pusheen.jpg" alt="Pusheen Macarons" width="120" height="120"></td>
               <td>$10.00 for 12</td>
           </tr>
           </table>
