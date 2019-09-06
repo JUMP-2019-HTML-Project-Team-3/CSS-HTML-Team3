@@ -25,10 +25,10 @@
     </div>
     <!-- NAV BAR END -->
 
-    <!-- Feature 3:   (span element see below) -->
+    <!-- Opening Site Header -->
     <h1>Welcome to <span style="color:red">Look at Our Restaurants!.com</span> !!!</h1>
 
-    <!-- Feature 1: Headings (see below) -->
+    <!-- Opening Site Sub Headers -->
     <h2>You're in the right place to discover great food!</h2>
     <h3>Check out the Navigation bar above to link to our favorite restaurants and recipes!</h3>
 
@@ -46,17 +46,21 @@
       </p>
       <footer>— Socrates</footer>
     </blockquote>
-
-    <!-- Feature 2: (bi directional override see below) -->
-    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <!-- This is a test image use CSS img1 for formatting -->
+    <embed id="img1" src="matthew_images/burger.jpg">
 
     <!-- Feature 6:   Plugins (object see below) -->
     <!-- Feature 6: (embed see below) -->
-    <br><br><br>
-    <embed src="matthew_images/burger.jpg">
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="matthew_images/burger.jpg">
+            <img src="matthew_images/burger.jpg" alt="Burger" width="600" height="400">
+          </a>
+          <div class="desc">This is a hamburger</div>
+        </div>
+      </div>
 
     <!-- Feature 4: Buttons and answer without javascript-->
-    <br><br><br>
     <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
       Click me to display Date and Time.
     </button>
@@ -103,17 +107,6 @@
     </form>
 
     <!-- Feature 7: Drag and Drop (see below)  -->
-    <style>
-      #div1,
-      #div2 {
-        float: left;
-        width: 100px;
-        height: 35px;
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid black;
-      }
-    </style>
     <script>
       function allowDrop(ev) {
         ev.preventDefault();
@@ -129,31 +122,27 @@
         ev.target.appendChild(document.getElementById(data));
       }
     </script>
-    </head>
 
-    <body>
+    <!-- Drag and Drop Demo -->
+    <h2>Drag and Drop</h2>
+    <p>Drag the image back and forth between the two div elements.</p>
 
-      <h2>Drag and Drop</h2>
-      <p>Drag the image back and forth between the two div elements.</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img
+        src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg"
+        draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+    </div>
 
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img
-          src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg"
-          draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
-      </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-      <!-- Feature 2: (address below) -->
-      <br> <br> <br> <br> <br>
-      <address>
-        <p>by John Doe.<br>
-          Visit us at:<br>
-          Example.com<br>
-          Box 564, Disneyland<br>
-          USA</p>
-      </address>
-    </body>
+    <!-- Feature 2: (address below) -->
+    <address>
+      <p>by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA</p>
+    </address>
 
     <!-- Feature 10: -->
     <!-- Show the get vs post w3 article -->
