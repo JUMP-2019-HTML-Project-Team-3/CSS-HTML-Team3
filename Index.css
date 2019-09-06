@@ -56,22 +56,81 @@
 /* End Image Formats */
 
 /* Text Formats */
+    /* Element defaults */
     p {
+        /* paragraph centering */
         text-align: center;
-        color: red;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        /* header centering */
+        text-align: center;
+    }
+    /* class element defaults */
+    .left{
+        /* any element calling class center */
+        text-align: left;
     }
 /* End Text Formats */
-    h1,h2,h3,h4,h5,h6{
-        text-align: center;
-    }
+
 /* Button Formats */
-#div1,
-#div2 {
-  float: left;
-  width: 100px;
-  height: 35px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-}
+    #div1,
+    #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    }
+
+    .dropbtn {
+        /* dropdowns */
+        background-color: rgb(165, 23, 23);
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+    .dropdown {
+        /* The container <div> - needed to position the dropdown content */
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    text-decoration-color: white;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: yellow}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    text-decoration-color: white;
+    background-color:rgb(165, 23, 23);
+  }
 /* End Button Formats */
