@@ -7,18 +7,11 @@
 <head>
     <!-- HTML Class .stages is used to outline different stages during recipe cooking process.
     Setting the style of an HTML element, can be done with the style attribute. -->
-    <style>
-        .stages {
-            background-color: #bf3434;
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: center;
-            margin: 20px;
-            padding: 20px;
-        }
-    </style>
-    <!-- Implements external CSS file. -->
+
+    <!-- Implements team external CSS file. -->
     <link rel="stylesheet" type="text/css" href="TeamTemplate.css">
+    <!-- Implements own external CSS file. -->
+    <link rel="stylesheet" type="text/css" href="Omran_webpage.css">
 
 </head>
 
@@ -82,6 +75,7 @@ The src attribute specifies the URL (web address) of the image. If a browser can
         <li>A chef's knife</li>
         <li>A big cutting board</li>
     </ul>
+
     <!-- Here we use our class to insert stage banners into our cooking recipe to help the reader keep up! -->
     <div class="stages">
         <h2>Prep Work</h2>
@@ -194,11 +188,6 @@ The src attribute specifies the URL (web address) of the image. If a browser can
             <p>Congratulations, you're done cooking! Now to make the meal presentable and serve it.</p>
             <progress value="90" max="100"></progress>
         </div>
-        <!-- HTML New Element Figure allows for usage of figcaption to add a caption for the figure. -->
-        <figure>
-            <img src="Omran_photos/fake_pork_roast_1.jpeg" alt="Roast Pork (Just Kidding! 1/3" width="600" height="1060">
-            <figcaption>Figure 1 - Fake Pork Roast finished baking from the oven.</figcaption>
-        </figure>
         <li>
             <p>Remove the Twine and the Rosemary. Once baking is done, remove twine and rosemary - they are not to be
                 eaten.</p>
@@ -216,8 +205,18 @@ The src attribute specifies the URL (web address) of the image. If a browser can
         </li>
     </ol>
 
-    <img src="Omran_photos/fake_pork_roast_3.jpeg" alt="Roast Pork (Just Kidding! 3/3" width="600" height="1060">
-
+    <!-- HTML New Element Figure allows for usage of figcaption to add a caption for the figure. -->
+    <div class = "gallery">
+        <a target="_blank" href="Omran_photos/fake_pork_roast_1.jpeg">
+            <img src="Omran_photos/fake_pork_roast_1.jpeg" alt="Roast Pork (Just Kidding! 1/3" width="600" height="1060">
+        </a>
+        <div>Figure 1 - Fake Pork Roast finished baking from the oven.</div>
+    </div>
+    <div class = "gallery">
+        <a target="_blank" href="Omran_photos/fake_pork_roast_1.jpeg">
+            <img src="Omran_photos/fake_pork_roast_3.jpeg" alt="Roast Pork (Just Kidding! 3/3" width="600" height="1060">
+        </a>
+        <div>Figure 3 - Fake Pork Roast being cut to serve!</div>
+    </div>
 </body>
-
 </html>
