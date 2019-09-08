@@ -82,15 +82,17 @@
 	
 	/*End of NAVBAR */
 	
+	/* Creates border */
 	.outer-box-frame {
 		border: 1rem solid #2b506e;
 	}
 
-
+	/* Sets background color */
 	body {
 		background-color: wheat;
 	}
 	
+	/* Tells all paragraph elements to be of this specified font-family */
 	p {
 		font-family: "Times New Roman", Times, serif;
 	}
