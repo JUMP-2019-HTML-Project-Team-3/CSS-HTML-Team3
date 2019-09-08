@@ -14,6 +14,7 @@
 }
 
 .format-links{
+	/*NOTE: Links are able to override background-color and text-decoration from the team's CSS on every page by using the !important tag at the end */
 	background-color: deeppink !important;
 	text-decoration: none !important;
 	font-size: 120%;
