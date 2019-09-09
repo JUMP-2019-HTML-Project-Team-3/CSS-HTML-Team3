@@ -54,16 +54,22 @@
     <!-- This is a test image use CSS img1 for formatting -->
     <embed id="img1" src="matthew_images/burger.jpg">
 
-    <!-- Feature 6:   Plugins (object see below) -->
-    <!-- Feature 6: (embed see below) -->
-    <div>
-        <div class="gallery">
+    <!-- Image Gallery -->
+    <div class="row">
+        <div class="gallery column">
           <a target="_blank" href="matthew_images/burger.jpg">
             <img src="matthew_images/burger.jpg" alt="Burger" width="600" height="400">
           </a>
-          <div class="desc">This is a hamburger</div>
+          <div class="desc left">This is a hamburger</div>
         </div>
+
+      <div class="gallery column">
+        <a target="_blank" href="matthew_images/hotdog.jpeg">
+          <img src="matthew_images/hotdog.jpeg" alt="HotDog" width="600" height="400">
+        </a>
+        <div class="desc">This is a hotdog</div>
       </div>
+    </div>
 
     <!-- Feature 4: Buttons and answer without javascript-->
     <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
